@@ -29,7 +29,7 @@ void CFeet::setfeet(int f)
 }
 void CFeet::setinches(int ich)
 {
-	inches = ich / 12;
+	inches = ich % 12;
 	feet = feet + ich / 12;	
 }
 void CFeet::display()
